@@ -251,9 +251,36 @@ form {
             "header header header header" auto
             ".      lists  lists      ." auto 
             ".      active  active      ." auto /
-            1fr auto auto 1fr;
+            1fr 300px 300px 1fr;
     }
     .all-tasks {
         margin-bottom: 70px;
     }
 }
+
+@media only screen and (max-width: 645px) {
+    body {
+        display: grid;
+        grid: 
+            "header header header header" auto
+            ".      lists  lists      ." auto 
+            ".      active  active      ." auto /
+            1fr 200px 200px 1fr;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    body {
+        display: grid;
+        grid: 
+            "header header header header" auto
+            ".      lists  lists      ." auto 
+            ".      active  active      ." auto/
+            1fr 120px 120px 1fr;
+    }
+    .new.task {
+        margin-bottom: 0;
+        width: 150px;
+    }
+}
+
