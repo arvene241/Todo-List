@@ -244,3 +244,16 @@ form {
     color: var(--clr-light);
 }
 
+@media only screen and (max-width: 900px) {
+    body {
+        display: grid;
+        grid: 
+            "header header header header" auto
+            ".      lists  lists      ." auto 
+            ".      active  active      ." auto /
+            1fr auto auto 1fr;
+    }
+    .all-tasks {
+        margin-bottom: 70px;
+    }
+}
